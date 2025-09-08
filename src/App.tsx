@@ -12,6 +12,11 @@ import Home from './component/Home';
 import Product1 from './component/freeshipping';
 import FeaturedProducts from './component/BestSellingProducts';
 import ProductGrid from './component/ProductGrid';
+import KapeePage from './component/page';
+import FAQ from './component/FAQ';
+import Login from './component/Login';
+import Registration from './component/Registration';
+import Footer2 from './component/footer2';
 
 
 
@@ -29,6 +34,15 @@ function App() {
           <Route path='/freeshipping' element={<Product1/>}/>
           <Route path='/FeatureProducts' element={<FeaturedProducts/>}/>
           <Route path='/ProductGrid' element={<ProductGrid/>}/>
+          <Route path='/page' element={<KapeePage/>}/>
+          <Route path='/FAQ' element={<FAQ/>}/>
+          <Route path='/Login' element={<Login/>}/>
+          <Route path="/register" element={<Registration />} />
+          <Route path='/Footer2' element={<Footer2/>}/>
+
+
+          
+
         </Route>
       </Routes>
       

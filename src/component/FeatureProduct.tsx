@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "./Productcard";
+import ProductCard from "./ProductCards";
 
 // Dummy Data
 const products = [

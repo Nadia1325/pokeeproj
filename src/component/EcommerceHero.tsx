@@ -3,7 +3,7 @@ import { Menu, ChevronDown, ChevronRight } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import BestSellingProducts from './BestSellingProducts';
 import Product from './product';
-import Product1 from './freeshipping';
+
 
 
 interface CategoryItem {
@@ -52,10 +52,15 @@ const EcommerceHero: React.FC = () => {
   const navigationItems: NavigationItem[] = [
     { name: "HOME", hasDropdown: false, path: "/Home" },
     { name: "SHOP", path: "/EcommerceShop", hasDropdown: true },
-    { name: "PAGES", hasDropdown: true },
+    { name: "PAGES", path:"/page",hasDropdown: true },
     { name: "BLOG", path: "/BlogPost", hasDropdown: true },
     { name: "ELEMENTS", path: "/Elements", hasDropdown: true },
+    {name: "FAQ", path:"/FAQ", hasDropdown:true },
+    {name: "LOGIN", path:"/Login", hasDropdown:true },
+   
+
     { name: "BUY NOW", hasDropdown: false }
+
   ];
 
   const toggleCategory = (categoryName: string) => {
@@ -268,7 +273,7 @@ const EcommerceHero: React.FC = () => {
       {/* Product Components */}
       <Product />
       <BestSellingProducts />
-      <Product1/>
+      
     
 
       {/* Featured Categories */}
