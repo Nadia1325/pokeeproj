@@ -5,6 +5,9 @@ import { Link } from "react-router-dom"; // Import Link
 const Navbar: React.FC = () => {
   return (
     <>
+
+
+    
       {/* Top Navbar */}
       <div className="flex justify-between items-center py-4 px-6 shadow-md">
         <h1 className="text-2xl font-bold">kapee.</h1>
