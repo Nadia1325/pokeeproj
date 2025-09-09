@@ -220,7 +220,7 @@ const EcommerceFeaturesAndTabs: React.FC = () => {
             {/* Columns 2-4 would repeat similar structure */}
             {[1, 2, 3].map((colIndex) => (
               <div key={colIndex} className="space-y-6">
-                {productsByTab[activeTab]?.slice(0, 3).map((product, index) => {
+                {productsByTab[activeTab]?.slice(0, 3).map((_Product, index) => {
                   // Rotate products for visual variety
                   const rotatedProducts = [...productsByTab[activeTab]];
                   for (let i = 0; i < colIndex; i++) {

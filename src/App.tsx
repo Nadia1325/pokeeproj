@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './component/navbar';
-import EcommerceFeaturesAndTabs from './component/EcommerceFeaturesAndTabs';
+
+
 import EcommerceHero from './component/EcommerceHero';
 import LayoutHandling from './layoutfolder/layout';
 
@@ -14,9 +14,10 @@ import FeaturedProducts from './component/BestSellingProducts';
 import ProductGrid from './component/ProductGrid';
 import KapeePage from './component/page';
 import FAQ from './component/FAQ';
-import Login from './component/Login';
 import Registration from './component/Registration';
 import Footer2 from './component/footer2';
+import Login from './component/Login';
+
 
 
 
@@ -36,9 +37,11 @@ function App() {
           <Route path='/ProductGrid' element={<ProductGrid/>}/>
           <Route path='/page' element={<KapeePage/>}/>
           <Route path='/FAQ' element={<FAQ/>}/>
-          <Route path='/Login' element={<Login/>}/>
           <Route path="/register" element={<Registration />} />
           <Route path='/Footer2' element={<Footer2/>}/>
+          <Route path='/login' element={<Login onClose={function (): void {
+            throw new Error('Function not implemented.');
+          } }/>}/>
 
 
           

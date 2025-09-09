@@ -18,19 +18,6 @@ interface NavigationItem {
   path?: string;
 }
 
-// ✅ renamed from Product → ProductType to avoid conflict
-interface ProductType {
-  id: number;
-  name: string;
-  category: string;
-  price: number;
-  originalPrice?: number;
-  image: string;
-  discount?: string;
-  badge?: string;
-  availableStock?: number;
-  soldCount?: number;
-}
 
 const EcommerceHero: React.FC = () => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());

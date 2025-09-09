@@ -1,6 +1,5 @@
 import React from "react";
 import { Search, User, ShoppingCart } from "lucide-react"; // Make sure lucide-react is installed
-import { Link } from "react-router-dom"; // Import Link
 
 const Navbar: React.FC = () => {
   return (
